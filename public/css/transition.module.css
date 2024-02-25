@@ -1,0 +1,88 @@
+.left{
+    animation: transitionLeft 1.5s ease-in;
+}
+.right{
+    animation: transitionRight 1.5s ease-in;
+}
+.up {
+    animation: transitionUp 0.5s ease-in;
+}
+.down{
+    animation: transitionDown 1.5s ease-in;
+}
+.zoomin{
+    animation: zoomin 1.5s ease-in;
+}
+  
+  .first {
+    animation: slideIn 3s infinite;
+  }
+  
+  .second {
+    animation: slideIn 3s infinite;
+  }
+  
+  .third {
+    animation: slideIn 3s infinite;
+  }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}  
+@keyframes zoomin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}  
+
+@keyframes transitionLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-150px); /* Corrected typo here */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Corrected typo here */
+    }
+}
+@keyframes transitionRight {
+    from {
+        opacity: 0;
+        transform: translateX(150px); /* Corrected typo here */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Corrected typo here */
+    }
+}
+@keyframes transitionUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50px); /* Corrected typo here */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Corrected typo here */
+    }
+}
+@keyframes transitionDown {
+    from {
+        opacity: 0;
+        transform: translateY(200px); /* Corrected typo here */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Corrected typo here */
+    }
+}
