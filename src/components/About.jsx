@@ -5,7 +5,7 @@ import styles from '../../public/css/transition.module.css'
 import SocialTags from './SocialTags'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
-import getData from './fetchData'
+import {getData} from './fetchData'
 
 const About = ()=> {
   const { ref: myRef, inView: isVisible } = useInView();
@@ -18,7 +18,7 @@ const About = ()=> {
     fetchdata();
   },[])
   return (
-    <div ref={myRef} className={`${!isVisible? 'invisible':''} min-h-screen p-4 py-10 bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative`}>
+    <div ref={myRef} className={`${!isVisible? 'invisible':''} min-h-screen p-4 pb-10 pt-24 bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative`}>
         <h2 className={`${isVisible? styles.up:''} text-center text-6xl font-mono max-[700px]:text-5xl`}>About <span className='text-yellow-500 font-bold'>Me</span></h2>
         <div className='mx-auto my-6 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 p-2'>
             <div className={`${isVisible? styles.left:''} col-1`}>

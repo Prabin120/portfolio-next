@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import SocialTags from './SocialTags'
+import { URL } from './fetchData';
 
 export default function Contact() {
   const [submitted,setSubmitted] = useState(false);
@@ -14,7 +15,7 @@ export default function Contact() {
     const email = formData.get('email')
     const message = formData.get('message')
 
-    const response = await fetch('http://127.0.0.1:8000/contact', {   
+    const response = await fetch(`${URL}contact`, {   
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name,email, message }),
@@ -27,7 +28,7 @@ export default function Contact() {
     }
   }
   return (
-    <div className={`min-h-screen bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative px-5 py-10`}>
+    <div className={`min-h-screen bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative px-5 pb-10 pt-24`}>
         <h2 className={`text-center text-5xl font-mono max-[700px]:text-4xl`}>Contact <span className='text-yellow-500 font-bold'>Me</span></h2>
         <div className='bg-slate-700 px-6 py-10 max-w-5xl mx-auto my-10 rounded-lg'>
           <h2 className='text-center text-3xl mb-3'>Reach out through Social Media</h2>

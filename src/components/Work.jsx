@@ -4,7 +4,7 @@ import SocialTags from './SocialTags'
 import { useInView } from 'react-intersection-observer'
 import styles from '../../public/css/transition.module.css'
 import { useEffect, useState } from "react";
-import getData from "./fetchData";
+import {getData} from "./fetchData";
 
 export default function Work() {
     const { ref: ref, inView: isVisible } = useInView();
@@ -17,7 +17,7 @@ export default function Work() {
       fetchData();
     },[])
   return (
-    <div className={`min-h-screen bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative px-5 py-10`}>
+    <div className={`min-h-screen bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative px-5 pb-10 pt-24`}>
         <h2 className={`text-center text-5xl font-mono max-[700px]:text-4xl`}>Work <span className='text-yellow-500 font-bold'>Experience</span></h2>
         <div className="relative my-20">
             <span ref={ref} className={`${!isVisible?"invisible":''} ${isVisible?styles.popup:""} absolute w-[1px] h-full left-1/2 bg-slate-500 max-[700px]:left-[-3px]`}></span>

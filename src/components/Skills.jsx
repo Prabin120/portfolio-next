@@ -17,7 +17,7 @@ import React, { useEffect, useState } from 'react'
 // import problemSolving from '../../public/images/problem-solving.png'
 import SkillSingle from './SkillSingle'
 import SocialTags from './SocialTags'
-import getData from './fetchData'
+import {getData} from './fetchData'
 
 export default function Skills() {
   const [data,setData] = useState(null)
@@ -29,7 +29,7 @@ export default function Skills() {
     fetchdata();
   },[])
   return (
-    <div className={`min-h-screen p-4 bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative py-10`}>
+    <div className={`min-h-screen p-4 bg-gradient-to-t from-[#191d24] to-[#040e28] text-slate-300 relative pb-10 pt-24    `}>
         <h2 className={`text-center text-5xl font-mono max-[700px]:text-3xl`}>Skill <span className='text-yellow-500 font-bold'>Set</span></h2>
         <div className="max-w-7xl m-auto mt-16">
           <h3 className='text-slate-300 text-2xl max-[700px]:text-xl inline-block mt-3 pr-6 pb-1 border-b-2 border-yellow-500'>Programing Languages</h3>
