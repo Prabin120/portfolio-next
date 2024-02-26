@@ -16,7 +16,7 @@ function WorkLeft({element}) {
             <ul className="text-slate-400">
               {
                 element.workDetail.map((data,index)=>{
-                  return <li className='text-slate-400 py-2'>{data}</li>
+                  return <li className='text-slate-400 py-2' key={index}>{data}</li>
                 })
               }
             </ul>
@@ -40,7 +40,7 @@ function WorkRight({element}) {
               <ul className="text-slate-400">
               {
                 element.workDetail.map((data,index)=>{
-                  return <li className='text-slate-400 py-2'>{data}</li>
+                  return <li className='text-slate-400 py-2' key={index}>{data}</li>
                 })
               }
             </ul>

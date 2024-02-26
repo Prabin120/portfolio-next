@@ -15,7 +15,7 @@ export default function HomeScreen() {
           <div className={font.className}>
             <p className='text-2xl italic font-thin text-yellow-500'>Hello World ,</p>
           </div>
-          <h1 className='font-mono text-5xl py-5'><span className={`${font.className}`}>It&apos;s</span><span className='text-7xl'> Prabin Sharma</span></h1>
+          <h1 className='font-mono text-5xl py-5'><span className={`${font.className}`}>It&#39;s</span><span className='text-7xl'> Prabin Sharma</span></h1>
           <h2 className='font-mono text-center text-3xl text-yellow-500 mt-4'>Software Developer</h2>
           <div className='text-center mt-24'>
             <SocialTags flex={"row"}/>
