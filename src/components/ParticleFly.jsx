@@ -77,7 +77,7 @@ const App = () => {
           density: {
             enable: true,
           },
-          value: 30,
+          value: 60,
         },
         opacity: {
           value: 0.5,

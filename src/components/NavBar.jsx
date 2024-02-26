@@ -48,7 +48,7 @@ export default function NavBar() {
             <li className={`font-mono px-8 hover:text-yellow-400 ${is_link_starts('resume') ? 'text-yellow-400':''} `}>Resume</li>
             </Link>
         </ul>
-        <ul className='p-5 fixed top-0 min-[700px]:hidden w-screen bg-slate-900 bg-opacity-80'>
+        <ul className='p-5 fixed top-0 min-[700px]:hidden w-screen bg-slate-900 bg-opacity-95'>
             <div className=' flex justify-between items-center '>
                 <Link onClick={()=>setNavbar(false)} href="/">
                   <h3>LOGO</h3>

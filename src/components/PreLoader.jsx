@@ -18,7 +18,7 @@ export default function PreLoader() {
         }
       `}</style>
       <div className='text-4xl text-slate-300 max-[700px]:text-xl'>
-        <p className='text-slate-600 mb-4'>Life of Coder</p>
+        <p className='text-slate-600 mb-4'>Life of a Coder</p>
         <p><span className='violet'>for(</span><span className='blue'>dateTime</span> <span className='blue-light'>i</span> = 1; <span className='blue-light'>i</span> {'<'} <span className='blue-light'>death</span>; <span className='blue-light'>i</span>+=<span className='blue-light'>day</span>)</p>
         <p className='violet'>&#123;</p>
         <p className={`${styles.first} ${styles.animation}`}> &emsp;<span className='func'>Eat</span><span className='blue'>()</span>;</p>
