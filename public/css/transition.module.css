@@ -1,14 +1,14 @@
 .left{
-    animation: transitionLeft 1.5s ease-in;
+    animation: zoomin 1.5s ease-in;
 }
 .right{
-    animation: transitionRight 1.5s ease-in;
+    animation: zoomin 1.5s ease-in;
 }
 .up {
-    animation: transitionUp 0.5s ease-in;
+    animation: zoomin 0.5s ease-in;
 }
 .down{
-    animation: transitionDown 1.5s ease-in;
+    animation: zoomin 1.5s ease-in;
 }
 .zoomin{
     animation: zoomin 1.5s ease-in;
