@@ -1,4 +1,5 @@
-const URL = "https://bright-bee-sari.cyclic.app/"
+// const URL = "https://bright-bee-sari.cyclic.app/"
+const URL = "http://127.0.0.1:8000/"
 
 const getData = async(path)=>{
     const response = await fetch(`${URL}${path}`);

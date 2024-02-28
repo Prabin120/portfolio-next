@@ -1,11 +1,8 @@
-import React from 'react'
-import Skillset from '@/components/Skills'
-import NavBar from '@/components/NavBar'
+import Skillset from '@/components/Skills';
 
 export default function Skills() {
   return (
     <>
-    <NavBar/>
     <Skillset/>
     </>
   )

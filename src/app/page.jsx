@@ -7,8 +7,6 @@ import Work from '@/components/Work'
 import Projects from '@/components/Projects'
 import { useEffect, useState } from 'react'
 import PreLoader from '@/components/PreLoader'
-import NavBar from '@/components/NavBar'
-
 
 export default function Home() {
   const [preLoader,setPreLoader] = useState(true);
@@ -40,7 +38,6 @@ export default function Home() {
   else
   return (
   <main className="">
-      <NavBar/>
       <HomeScreen/>
       <About/>
       <Work/>

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { RiMenuFoldLine } from "react-icons/ri";
 import { GiCrossedSwords } from "react-icons/gi";
 import { usePathname } from 'next/navigation'
+import Image from 'next/image';
+import logo from "../../public/logo/prabin-logo-good.png"
 
 
 export default function NavBar() {
@@ -51,7 +53,7 @@ export default function NavBar() {
         <ul className='p-5 fixed top-0 min-[700px]:hidden w-screen bg-slate-900 bg-opacity-95'>
             <div className=' flex justify-between items-center '>
                 <Link onClick={()=>setNavbar(false)} href="/">
-                  <h3>LOGO</h3>
+                  <Image src={logo} width={50} height={50} alt='Prabin-logo'></Image>
                 </Link>
                 <button onClick={()=>setNavbar(!navbar)}>
                     {
