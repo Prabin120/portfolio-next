@@ -1,16 +1,11 @@
 "use client"
-import { getData } from "@/components/fetchData";
 import { useEffect, useState } from "react";
-import { URL } from "@/components/fetchData";
+import resume from "../../../public/data/resume";
 
 export default function Resume() {
     const [pdf,setPdf] = useState(null);
     useEffect(()=>{
-        const fetchdata = async()=>{
-            const result = await getData("resume");
-            setPdf(result);
-        };
-        fetchdata();
+        setPdf(resume)
     },[])
     const pdfURL = pdf ? URL+pdf.resume+"#page=1&zoom=100" : "";
 

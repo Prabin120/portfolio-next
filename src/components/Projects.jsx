@@ -2,16 +2,12 @@
 import React, { useEffect, useState } from 'react'
 import SocialTags from './SocialTags'
 import ProjectSingle from './ProjectSingle';
-import {getData} from './fetchData';
+import projectData from '../../public/data/personal-projects';
 
 export default function Projects() {
   const [projects,setProjects] = useState(null)
   useEffect(()=>{
-    const fetchData = async()=>{
-      const response = await getData("personal-projects");
-      setProjects(response)
-    };
-    fetchData();
+    setProjects(projectData);
   },[])
   
   return (

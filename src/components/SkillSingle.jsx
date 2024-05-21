@@ -1,12 +1,13 @@
 'use client'
+import Image from 'next/image';
 import { useInView } from 'react-intersection-observer'
-import { URL } from './fetchData';
  
 export default function SkillSingle({element}) {
     const { ref: ref, inView: isVisible } = useInView();
   return (
     <div ref={ref} className={`${!isVisible?'invisible':''} flex w-full items-center gap-3`}>
-        <img src={`${URL}${element.icon}`} width={12} height={12} alt={element.name} className='w-12 h-12 inline mr-2'/>
+        <img src={`/${element.icon}`} width={12} height={12} alt={element.name} className='w-12 h-12 inline mr-2'/>
+        {/* <Image src={`/${element.icon}`} alt={element.name} width={50} height={50} /> */}
         <div className='w-full'>
             <div className="flex justify-between">
                 <h2 className='text-xl inline'>{element.name}</h2>
