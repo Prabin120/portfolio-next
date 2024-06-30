@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function Resume() {
-  const pdfFile = "/resume/Prabin_Resume.pdf";
+  const pdfFile = "/resume/PrabinResume.pdf";
   const [pdf, setPdf] = useState(null);
 
   useEffect(() => {
