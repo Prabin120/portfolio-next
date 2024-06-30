@@ -8,8 +8,8 @@ const font = Dancing_Script({ subsets: ['latin'] })
 export default function HomeScreen() {
   return (
       <div
-      className='bg-transparent flex h-[103vh] justify-center items-center text-slate-300 z-50 
-      bg-[url("../../public/images/man-in-black.png")]
+      className='bg-transparent flex h-[100vh] justify-center items-center text-slate-300 z-50 
+      
       bg-no-repeat bg-center'>
         <div className='p-3'>
           <div className={font.className}>

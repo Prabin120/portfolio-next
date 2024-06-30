@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import styles from '../../public/css/transition.module.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,7 +11,7 @@ function WorkLeft({ element }) {
         <span className="w-5 h-5 absolute rounded-full bg-yellow-500 right-[-18px] top-1/2 max-[700px]:left-[-13px]"></span>
         <span className="w-3 h-3 absolute rounded-full bg-slate-700 right-[-14px] mt-[4px] top-1/2 max-[700px]:left-[-9px]"></span>
         <h3 className="text-2xl font-bold">{element.title}</h3>
-        <p className="text-slate-400 text-lg mt-2">{element.company} | {element.location}</p>
+        <Link target='_blank' href={element.link} className="text-slate-400 text-lg mt-2 block hover:text-yellow-300">{element.company} | {element.location}</Link>
         <p className="bg-yellow-600 inline-block rounded-lg p-2 my-3 text-slate-200">{element.duration}</p>
         <ul className="text-slate-400">
           {
@@ -33,7 +34,7 @@ function WorkRight({ element }) {
         <span className="w-5 h-5 absolute rounded-full bg-yellow-500 left-[-18px] top-1/2 max-[700px]:left-[-13px]"></span>
         <span className="w-3 h-3 absolute rounded-full bg-slate-700 left-[-14px] mt-[4px] top-1/2 max-[700px]:left-[-9px]"></span>
         <h3 className="text-2xl font-bold">{element.title}</h3>
-        <p className="text-slate-400 text-lg mt-2">{element.company} | {element.location}</p>
+        <Link target='_blank' href={element.link} className="text-slate-400 text-lg mt-2 block hover:text-yellow-300">{element.company} | {element.location}</Link>
         <p className="bg-yellow-600 inline-block rounded-lg p-2 my-3 text-slate-200">{element.duration}</p>
         <ul className="text-slate-400">
           {

@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import manInBlack from '../../public/images/man-in-black.png'
+import manInBlack from '../../public/images/prabin_photo.jpg'
 import styles from '../../public/css/transition.module.css'
 import SocialTags from './SocialTags'
 import { useInView } from 'react-intersection-observer'
@@ -23,8 +23,8 @@ const About = () => {
                         {about}
                     </p>
                 </div>
-                <div className={`col-span-1 bg-slate-900 ${isVisible ? styles.right : ''}`}>
-                    <Image src={manInBlack} priority={false} alt='Prabin Sharma' />
+                <div className={`col-span-1 bg-slate-900 max-h-[400px] ${isVisible ? styles.right : ''}`}>
+                    <Image className='object-contain' src={manInBlack} priority={false} alt='Prabin Sharma' />
                 </div>
             </div>
             <div className={`${isVisible ? styles.down : ''} mx-auto my-8 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 p-2`}>
@@ -55,9 +55,6 @@ const About = () => {
                         <li className='font-light'>CGPA - 7.00</li>
                     </div>
                 </div>
-            </div>
-            <div className='fixed right-5 top-1/3'>
-                <SocialTags flex={"col"} />
             </div>
         </div>
     )

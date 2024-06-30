@@ -3,7 +3,7 @@ const skills = [
         skillType: "Programming Languages",
         name: "JavaScript",
         icon: "images/js_color.png",
-        percentage: "75"
+        percentage: "90"
     },
     {
         skillType: "Programming Languages",
@@ -29,11 +29,59 @@ const skills = [
         icon: "images/drf.png",
         percentage: "80"
     },
+    {
+        skillType: "Frameworks",
+        name: "NodeJS",
+        icon: "images/nodejs.png",
+        percentage: "85"
+    },
+    {
+        skillType: "Frameworks",
+        name: "React",
+        icon: "images/react.png",
+        percentage: "70"
+    },
+    {
+        skillType: "Frameworks",
+        name: "Next",
+        icon: "images/next.png",
+        percentage: "70"
+    },
     { 
         skillType: "Database", 
         name: "PostgreSQL", 
         icon: "images/pgsql.png", 
         percentage: "80" 
+    },
+    { 
+        skillType: "Database", 
+        name: "MongoDB", 
+        icon: "images/mongodb.png", 
+        percentage: "85" 
+    },
+    { 
+        skillType: "Database", 
+        name: "Redis", 
+        icon: "images/redis.png", 
+        percentage: "80" 
+    },
+    { 
+        skillType: "Others", 
+        name: "Docker", 
+        icon: "images/docker.png", 
+        percentage: "85" 
+    },
+    { 
+        skillType: "Others", 
+        name: "Git", 
+        icon: "images/git.png", 
+        percentage: "90" 
+    },
+    { 
+        skillType: "Others", 
+        name: "AWS", 
+        icon: "images/aws.png", 
+        percentage: "65"
     },
     {
         skillType: "Soft Skills",

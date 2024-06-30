@@ -38,6 +38,16 @@ export default function Skills() {
             })
           }
           </div>
+          
+          
+          <h3 className='text-slate-300 text-2xl max-[700px]:text-xl inline-block mt-6 pr-6 pb-1 border-b-2 border-yellow-500'>Others</h3>
+          <div className={`mt-6 mx-auto my-6 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-16 `}>
+          {
+            data && data.filter(skill => skill.skillType === 'Others').map((element,index)=>{
+              return <SkillSingle key={index} element={element}/>
+            })
+          }
+          </div>
 
           <h3 className='text-slate-300 text-2xl max-[700px]:text-xl inline-block mt-6 pr-6 pb-1 border-b-2 border-yellow-500'>Soft Skills</h3>
           <div className={`mt-6 mx-auto my-6 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-16 `}>
@@ -47,10 +57,6 @@ export default function Skills() {
             })
           }
           </div>
-
-        </div>
-        <div className='fixed right-5 top-1/3'>
-            <SocialTags flex={"col"}/>  
         </div>
     </div>
   )

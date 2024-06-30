@@ -1,49 +1,73 @@
 'use client'
-import About from '@/components/About'
-import HomeScreen from '@/components/HomeScreen'
-import Skills from '@/components/Skills'
-import Contact from '@/components/Contact'
-import Work from '@/components/Work'
-import Projects from '@/components/Projects'
-import { useEffect, useState } from 'react'
-import PreLoader from '@/components/PreLoader'
+
+import HomeScreen from "@/components/HomeScreen";
+import PreLoader from "@/components/PreLoader";
+import { useEffect, useState } from "react";
+import SocialTags from "@/components/SocialTags";
+import About from "@/components/About";
+import Work from "@/components/Work";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
+
 
 export default function Home() {
-  const [preLoader,setPreLoader] = useState(true);
+  const [preLoader, setPreLoader] = useState(true);
+  const [showSocialTags, setShowSocialTags] = useState(false);
 
   useEffect(() => {
-    // Check localStorage to see if preloader has been shown before
     const preLoaderShown = localStorage.getItem('preLoaderShown');
 
     if (preLoaderShown) {
-      setPreLoader(false); // Set preLoader to false if it has been shown before
+      setPreLoader(false);
     } else {
-      // Simulate loading delay with setTimeout
       const timeout = setTimeout(() => {
         setPreLoader(false);
-        // Set preLoaderShown in localStorage to indicate preloader has been shown
         localStorage.setItem('preLoaderShown', 'true');
-      },2000); // Adjust the duration as needed (in milliseconds)
+      }, 1000);
 
-      // Cleanup function to clear timeout
       return () => clearTimeout(timeout);
     }
-  }, []); // Empty dependency array ensures the effect runs only once on component mount
+  }, []);
 
-  if(preLoader){
+  useEffect(() => {
+    const handleScroll = () => {
+      const homeScreenHeight = document.getElementById('homeScreen').offsetHeight;
+      console.log(homeScreenHeight);
+      if (window.scrollY > homeScreenHeight) {
+        setShowSocialTags(true);
+      } else {
+        setShowSocialTags(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  if (preLoader) {
+    return <PreLoader />;
+  } else {
     return (
-      <PreLoader/>
-    )
+      <main className="">
+        <div id="homeScreen">
+          <HomeScreen />
+        </div>
+        <About/>
+        <Work/>
+        <Projects />
+        <Skills />
+        <Contact/>
+
+        {showSocialTags && (
+          <div className="fixed right-5 top-1/3">
+            <SocialTags flex={"col"} />
+          </div>
+        )}
+      </main>
+    );
   }
-  else
-  return (
-  <main className="">
-      <HomeScreen/>
-      <About/>
-      <Work/>
-      <Projects/>
-      <Skills/> 
-      <Contact/>
-    </main>
-  )
 }
