@@ -1,21 +1,33 @@
 const skills = [
     {
         skillType: "Programming Languages",
-        name: "JavaScript",
-        icon: "images/js_color.png",
-        percentage: "90"
-    },
-    {
-        skillType: "Programming Languages",
         name: "Python",
         icon: "images/python_color.png",
         percentage: "90"
     },
     {
         skillType: "Programming Languages",
+        name: "JavaScript",
+        icon: "images/js_color.png",
+        percentage: "90"
+    },
+    {
+        skillType: "Programming Languages",
+        name: "TypeScript",
+        icon: "images/typescript.png",
+        percentage: "90"
+    },
+    {
+        skillType: "Programming Languages",
+        name: "Golang",
+        icon: "images/go.png",
+        percentage: "50"
+    },
+    {
+        skillType: "Programming Languages",
         name: "C++",
         icon: "images/c++.png",
-        percentage: "70"
+        percentage: "50"
     },
     {
         skillType: "Frameworks",

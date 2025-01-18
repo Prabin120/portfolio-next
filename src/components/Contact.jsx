@@ -64,7 +64,7 @@ export default function Contact() {
           
           :
           error?
-          <p className='flex justify-center items-center text-2xl py-4 text-center'>Having some Technical issue. Please try after sometime 😥</p>
+          <p className='flex justify-center items-center text-2xl py-4 text-center'>It's broken 😥 please visit <a className='px-2 text-blue-600' target='_blank' href="https://apticode.in"> apticode.in </a> or reachout through <a className='pl-2 text-blue-600' href="https://www.linkedin.com/in/prabin120/" target="_blank" rel="noopener noreferrer"> Linkedin </a>. Thank you &#x1F49D;</p>
           :
           <p className='flex justify-center items-center text-4xl py-4 text-center'>Thank You for your kind response 	&#x1F49D;</p>
         } 

@@ -21,6 +21,11 @@ export default function ProjectSingle({element}) {
             <Link className='bg-slate-500 py-2 px-3 rounded-sm hover:bg-yellow-600 ' href={element.projectLink}>GitHub</Link>
         </div>
         }
+        { element.website &&
+          <div className='mt-6'>
+            <Link className='bg-slate-500 py-2 px-3 rounded-sm hover:bg-yellow-600 ' href={element.website}>Website Link</Link>
+        </div>
+        }
     </div>
   )
 }

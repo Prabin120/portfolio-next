@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import SocialTags from './SocialTags'
 import ProjectSingle from './ProjectSingle';
 import projectData from '../../public/data/personal-projects';
 

@@ -6,9 +6,10 @@ const experiences = [
     duration: "March 2024 - Present",
     link: "https://www.zeomega.com/",
     workDetail: [
-      "Implemented a feature to search impacted methods in the codebase, improving developer efficiency by 10%.",
-      "Resolved various bugs by understanding the codebase and product flow.",
-      "Delivered work on time following agile methodology and sprint guidelines.",
+      "Developed an internal tool by leveraging tech stacks such as Jenkins jobs and Flask to identify impacted methods in a large codebase, improving developer efficiency by 15%.",
+      "Collaborated with various teams and closely worked with clients to understand and implement their requirements.",
+      "Guided newcomers in familiarizing themselves with the codebase, setup, analyzing problems, fixing them, and understanding the overall process.",
+      "Delivered projects on schedule by adhering to agile methodology and sprint guidelines, contributing to a 15% improvement in project timelines."
     ]
   },
   {
