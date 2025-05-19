@@ -31,6 +31,12 @@ const skills = [
     },
     {
         skillType: "Frameworks",
+        name: "LangChain",
+        icon: "images/langchain.png",
+        percentage: "75"
+    },
+    {
+        skillType: "Frameworks",
         name: "Django",
         icon: "images/django_color.png",
         percentage: "85"
@@ -63,6 +69,12 @@ const skills = [
         skillType: "Database", 
         name: "PostgreSQL", 
         icon: "images/pgsql.png", 
+        percentage: "80" 
+    },
+    { 
+        skillType: "Database", 
+        name: "Chroma", 
+        icon: "images/chroma.png", 
         percentage: "80" 
     },
     { 
